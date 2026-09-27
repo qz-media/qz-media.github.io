@@ -951,3 +951,979 @@ footer {
         font-size: 22px;
     }
 }
+
+
+
+
+
+
+
+/* =========================================================
+   QUIZGO REWARDS HOMEPAGE
+   New homepage-only styles
+   Existing styles above remain unchanged.
+   ========================================================= */
+
+
+/* ---------------------------------
+   REWARDS HERO
+--------------------------------- */
+
+.rewards-hero {
+    background:
+        radial-gradient(
+            circle at 15% 20%,
+            rgba(124, 58, 237, 0.13),
+            transparent 32%
+        ),
+        radial-gradient(
+            circle at 85% 15%,
+            rgba(245, 158, 11, 0.16),
+            transparent 32%
+        ),
+        radial-gradient(
+            circle at 50% 100%,
+            rgba(79, 70, 229, 0.08),
+            transparent 40%
+        ),
+        #ffffff;
+}
+
+.reward-badge {
+    background: linear-gradient(
+        135deg,
+        #f3e8ff,
+        #fff7df
+    );
+
+    color: #6d28d9;
+
+    border: 1px solid rgba(124, 58, 237, 0.12);
+
+    box-shadow:
+        0 6px 20px rgba(124, 58, 237, 0.08);
+}
+
+.rewards-hero h1 span {
+    background: linear-gradient(
+        90deg,
+        #7c3aed,
+        #d97706
+    );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.hero-glow {
+    position: absolute;
+
+    width: 220px;
+    height: 220px;
+
+    border-radius: 50%;
+
+    filter: blur(60px);
+
+    pointer-events: none;
+}
+
+.hero-glow-one {
+    top: 15%;
+    left: -80px;
+
+    background: rgba(124, 58, 237, 0.08);
+}
+
+.hero-glow-two {
+    right: -80px;
+    bottom: 10%;
+
+    background: rgba(245, 158, 11, 0.10);
+}
+
+
+/* ---------------------------------
+   HERO REWARD CARD
+--------------------------------- */
+
+.hero-reward-card {
+    max-width: 540px;
+
+    margin: 28px auto 0;
+
+    padding: 17px 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    text-align: left;
+
+    border-radius: 17px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255, 255, 255, 0.95),
+            rgba(250, 247, 255, 0.95)
+        );
+
+    border: 1px solid rgba(124, 58, 237, 0.12);
+
+    box-shadow:
+        0 12px 35px rgba(80, 50, 120, 0.08);
+}
+
+.hero-reward-icon {
+    flex-shrink: 0;
+
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #7c3aed,
+            #a855f7
+        );
+
+    color: #ffffff;
+
+    font-size: 23px;
+
+    box-shadow:
+        0 8px 20px rgba(124, 58, 237, 0.22);
+}
+
+.hero-reward-content strong {
+    display: block;
+
+    color: #222222;
+
+    font-size: 15px;
+
+    margin-bottom: 3px;
+}
+
+.hero-reward-content p {
+    color: #777777;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+}
+
+
+/* ---------------------------------
+   REWARD INTRO
+--------------------------------- */
+
+.reward-intro {
+    padding: 95px 0;
+
+    background:
+        linear-gradient(
+            180deg,
+            #ffffff,
+            #faf9ff
+        );
+}
+
+.reward-intro-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 0.9fr;
+
+    gap: 70px;
+
+    align-items: center;
+}
+
+.reward-label {
+    color: #7c3aed;
+}
+
+.reward-intro-text h2 {
+    max-width: 600px;
+
+    font-size: clamp(32px, 5vw, 48px);
+
+    line-height: 1.1;
+
+    letter-spacing: -2px;
+
+    color: #111111;
+
+    margin-bottom: 22px;
+}
+
+.reward-intro-text h2 span {
+    background: linear-gradient(
+        90deg,
+        #7c3aed,
+        #d97706
+    );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    color: transparent;
+}
+
+.reward-intro-text p {
+    max-width: 590px;
+
+    color: #666666;
+
+    font-size: 16px;
+
+    margin-bottom: 14px;
+}
+
+
+/* ---------------------------------
+   POINTS VISUAL
+--------------------------------- */
+
+.reward-visual {
+    position: relative;
+
+    min-height: 330px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.points-card {
+    position: relative;
+
+    width: min(100%, 390px);
+
+    padding: 30px;
+
+    border-radius: 25px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #171323,
+            #30204f
+        );
+
+    color: #ffffff;
+
+    box-shadow:
+        0 25px 60px rgba(60, 35, 100, 0.20);
+
+    overflow: hidden;
+}
+
+.points-card::after {
+    content: "";
+
+    position: absolute;
+
+    width: 160px;
+    height: 160px;
+
+    right: -60px;
+    top: -60px;
+
+    border-radius: 50%;
+
+    background: rgba(245, 158, 11, 0.20);
+
+    filter: blur(5px);
+}
+
+.points-card-top {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    color: #c9c1d8;
+
+    font-size: 13px;
+}
+
+.points-live {
+    color: #fbbf24;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+}
+
+.points-number {
+    margin: 18px 0 20px;
+
+    font-size: 55px;
+
+    line-height: 1;
+
+    font-weight: 900;
+
+    letter-spacing: -3px;
+}
+
+.points-progress {
+    height: 9px;
+
+    background: rgba(255, 255, 255, 0.12);
+
+    border-radius: 50px;
+
+    overflow: hidden;
+}
+
+.points-progress-fill {
+    width: 72%;
+
+    height: 100%;
+
+    border-radius: inherit;
+
+    background:
+        linear-gradient(
+            90deg,
+            #8b5cf6,
+            #f59e0b
+        );
+}
+
+.points-card p {
+    margin-top: 17px;
+
+    color: #c4bdcf;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+}
+
+.floating-star {
+    position: absolute;
+
+    z-index: 2;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 55px;
+    height: 55px;
+
+    border-radius: 17px;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.10);
+
+    font-size: 24px;
+}
+
+.star-one {
+    top: 15px;
+    right: 4%;
+}
+
+.star-two {
+    bottom: 20px;
+    left: 2%;
+}
+
+
+/* ---------------------------------
+   EVERYDAY REWARDS
+--------------------------------- */
+
+.everyday-section {
+    padding: 95px 0;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f7f4ff,
+            #fffaf0
+        );
+
+    border-top: 1px solid #eee9f8;
+
+    border-bottom: 1px solid #eee9f8;
+}
+
+.everyday-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 18px;
+}
+
+.everyday-card {
+    padding: 27px 23px;
+
+    border-radius: 19px;
+
+    background: rgba(255, 255, 255, 0.90);
+
+    border: 1px solid rgba(124, 58, 237, 0.10);
+
+    box-shadow:
+        0 10px 30px rgba(60, 40, 100, 0.05);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.everyday-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 18px 40px rgba(60, 40, 100, 0.10);
+}
+
+.everyday-icon {
+    width: 52px;
+    height: 52px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 17px;
+
+    border-radius: 15px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f3e8ff,
+            #fff7df
+        );
+
+    font-size: 24px;
+}
+
+.everyday-card h3 {
+    color: #171717;
+
+    font-size: 17px;
+
+    margin-bottom: 8px;
+}
+
+.everyday-card p {
+    color: #707070;
+
+    font-size: 13px;
+
+    line-height: 1.65;
+}
+
+.reward-disclaimer {
+    max-width: 650px;
+
+    margin: 30px auto 0;
+
+    text-align: center;
+
+    color: #777777;
+
+    font-size: 12px;
+}
+
+
+/* ---------------------------------
+   REWARD JOURNEY
+--------------------------------- */
+
+.reward-journey {
+    padding: 95px 0;
+
+    background: #ffffff;
+}
+
+.journey-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 18px;
+}
+
+.journey-card {
+    position: relative;
+
+    padding: 30px 24px;
+
+    border-radius: 19px;
+
+    background: #ffffff;
+
+    border: 1px solid #e8e4f0;
+
+    overflow: hidden;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.journey-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 18px 40px rgba(80, 50, 120, 0.08);
+}
+
+.journey-number {
+    position: absolute;
+
+    top: 17px;
+    right: 20px;
+
+    color: #eee9f5;
+
+    font-size: 32px;
+
+    font-weight: 900;
+}
+
+.journey-icon {
+    width: 54px;
+    height: 54px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 15px;
+
+    background: #f4f0fb;
+
+    font-size: 25px;
+
+    margin-bottom: 22px;
+}
+
+.journey-card h3 {
+    font-size: 19px;
+
+    margin-bottom: 8px;
+
+    color: #171717;
+}
+
+.journey-card p {
+    color: #707070;
+
+    font-size: 13px;
+
+    line-height: 1.65;
+}
+
+
+/* ---------------------------------
+   BIG REWARD CTA
+--------------------------------- */
+
+.reward-cta {
+    position: relative;
+
+    padding: 110px 0;
+
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(168, 85, 247, 0.35),
+            transparent 35%
+        ),
+        linear-gradient(
+            135deg,
+            #171323,
+            #2a1944
+        );
+
+    color: #ffffff;
+}
+
+.reward-cta-glow {
+    position: absolute;
+
+    width: 350px;
+    height: 350px;
+
+    top: -180px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    border-radius: 50%;
+
+    background: rgba(245, 158, 11, 0.15);
+
+    filter: blur(60px);
+}
+
+.reward-cta-content {
+    position: relative;
+
+    z-index: 1;
+
+    max-width: 760px;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.cta-crown {
+    width: 70px;
+    height: 70px;
+
+    margin: 0 auto 22px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 22px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #7c3aed,
+            #d97706
+        );
+
+    font-size: 32px;
+
+    box-shadow:
+        0 15px 35px rgba(124, 58, 237, 0.30);
+}
+
+.reward-cta .section-label {
+    color: #c4b5fd;
+}
+
+.reward-cta h2 {
+    margin: 10px auto 17px;
+
+    max-width: 700px;
+
+    font-size: clamp(34px, 6vw, 56px);
+
+    line-height: 1.08;
+
+    letter-spacing: -2px;
+}
+
+.reward-cta h2 span {
+    background:
+        linear-gradient(
+            90deg,
+            #c4b5fd,
+            #fbbf24
+        );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    color: transparent;
+}
+
+.reward-cta p {
+    max-width: 650px;
+
+    margin: 0 auto;
+
+    color: #c9c2d2;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+}
+
+.cta-download {
+    background:
+        linear-gradient(
+            135deg,
+            #ffffff,
+            #f4efff
+        );
+
+    color: #28153f;
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.20);
+}
+
+.cta-download:hover {
+    background: #ffffff;
+
+    box-shadow:
+        0 20px 45px rgba(0, 0, 0, 0.28);
+}
+
+.cta-download .download-icon {
+    background: #eee5ff;
+}
+
+.cta-download .download-text small {
+    color: #777777;
+}
+
+.cta-note {
+    margin-top: 14px;
+
+    color: #91889d;
+
+    font-size: 12px;
+}
+
+
+/* ---------------------------------
+   HOMEPAGE DOWNLOAD CTA ENHANCEMENT
+--------------------------------- */
+
+.download-section .download-box {
+    position: relative;
+
+    overflow: hidden;
+}
+
+.download-section .download-box::after {
+    content: "⭐";
+
+    position: absolute;
+
+    right: 28px;
+    top: -20px;
+
+    font-size: 95px;
+
+    opacity: 0.055;
+
+    pointer-events: none;
+}
+
+
+/* ---------------------------------
+   REWARD DOWNLOAD BUTTON
+--------------------------------- */
+
+.reward-download {
+    background:
+        linear-gradient(
+            135deg,
+            #18121f,
+            #3b1768
+        );
+
+    box-shadow:
+        0 14px 35px rgba(90, 45, 150, 0.20);
+}
+
+.reward-download:hover {
+    background:
+        linear-gradient(
+            135deg,
+            #21162c,
+            #4b1d82
+        );
+
+    box-shadow:
+        0 20px 45px rgba(90, 45, 150, 0.28);
+}
+
+
+/* ---------------------------------
+   TABLET
+--------------------------------- */
+
+@media (max-width: 950px) {
+
+    .everyday-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .journey-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .reward-intro-grid {
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+    }
+
+    .reward-intro-text {
+        text-align: center;
+    }
+
+    .reward-intro-text h2,
+    .reward-intro-text p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .reward-visual {
+        min-height: 300px;
+    }
+}
+
+
+/* ---------------------------------
+   MOBILE
+--------------------------------- */
+
+@media (max-width: 700px) {
+
+    .hero-reward-card {
+        text-align: left;
+
+        padding: 15px;
+    }
+
+    .reward-intro {
+        padding: 70px 0;
+    }
+
+    .everyday-section {
+        padding: 70px 0;
+    }
+
+    .reward-journey {
+        padding: 70px 0;
+    }
+
+    .reward-cta {
+        padding: 80px 0;
+    }
+
+    .everyday-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .journey-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .points-card {
+        padding: 25px;
+    }
+
+    .points-number {
+        font-size: 48px;
+    }
+
+    .floating-star {
+        width: 45px;
+        height: 45px;
+
+        font-size: 19px;
+    }
+
+    .star-one {
+        right: 0;
+    }
+
+    .star-two {
+        left: 0;
+    }
+
+    .reward-cta h2 {
+        letter-spacing: -1.5px;
+    }
+}
+
+
+/* ---------------------------------
+   SMALL MOBILE
+--------------------------------- */
+
+@media (max-width: 450px) {
+
+    .hero-reward-card {
+        gap: 10px;
+    }
+
+    .hero-reward-icon {
+        width: 42px;
+        height: 42px;
+
+        border-radius: 12px;
+
+        font-size: 19px;
+    }
+
+    .hero-reward-content strong {
+        font-size: 13px;
+    }
+
+    .hero-reward-content p {
+        font-size: 11px;
+    }
+
+    .reward-intro-text h2 {
+        letter-spacing: -1px;
+    }
+
+    .points-card {
+        border-radius: 20px;
+    }
+
+    .points-number {
+        font-size: 43px;
+    }
+
+    .everyday-card {
+        padding: 24px 20px;
+    }
+
+    .journey-card {
+        padding: 25px 20px;
+    }
+
+    .reward-cta {
+        padding: 70px 0;
+    }
+
+    .cta-crown {
+        width: 60px;
+        height: 60px;
+
+        border-radius: 18px;
+
+        font-size: 27px;
+    }
+
+}
+
+
